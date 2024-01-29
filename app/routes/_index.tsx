@@ -339,9 +339,9 @@ export default function Index() {
                     placeholder="vicki_voter@example.com"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
-                    className="w-full rounded p-1 border border-gray-400 ring-0 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full md:max-w-[400px] rounded p-1 border border-gray-400 ring-0 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
-                  <div className="text-center my-8">
+                  <div className="text-center md:text-left my-8">
                     <button
                       onClick={() => {
                         setEmail("");
