@@ -5,6 +5,8 @@ import Header from "~/components/Header";
 import Navbar from "~/components/Navbar";
 import Card from "~/components/Card";
 import Emphasis from "~/components/Emphasis";
+import Footer from "~/components/Footer";
+import Button from "~/components/Button";
 
 const DONOR_FIRST_NAMES = [
   "Emily",
@@ -242,13 +244,12 @@ export default function Index() {
                   name is Goates.
                 </p>
                 <div className="text-center py-10">
-                  <a
+                  <Button
                     href="https://youtu.be/SIaFtAKnqBU?si=tihsrIWZ-ccDd1IQ"
                     target="_blank"
-                    className="bg-blue-500 px-3 py-2 text-white font-semibold rounded hover:bg-blue-700"
                   >
                     Learn more about the GOAT Party
-                  </a>
+                  </Button>
                 </div>
                 <p>Keep on scrollin' to learn more about my platform!</p>
               </div>
@@ -342,17 +343,16 @@ export default function Index() {
                     className="w-full md:max-w-[400px] rounded p-1 border border-gray-400 ring-0 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                   <div className="text-center md:text-left my-8">
-                    <button
+                    <Button
                       onClick={() => {
                         setEmail("");
                         setMessage(
                           "Thanks for signing up! We can't wait for you to buy our shirt, mugs, stickers, and other swag!"
                         );
                       }}
-                      className="bg-blue-500 px-3 py-2 text-white font-semibold rounded hover:bg-blue-700"
                     >
                       Notify me about the merch!
-                    </button>
+                    </Button>
                   </div>
                 </div>
               )}
@@ -369,8 +369,7 @@ export default function Index() {
                   make a lot of money... like seriously. Tons!
                 </p>
                 <div className="text-center my-8">
-                  <button
-                    className="bg-blue-500 px-3 py-2 text-white font-semibold rounded hover:bg-blue-700"
+                  <Button
                     onMouseOver={() => setAmount("10,000")}
                     onMouseOut={() => setAmount("10")}
                     onClick={() => {
@@ -380,7 +379,7 @@ export default function Index() {
                     }}
                   >
                     Donate ${amount}
-                  </button>
+                  </Button>
                 </div>
                 <p>
                   Tons of people are donating to Todd's campaign. Check out our{" "}
@@ -431,13 +430,7 @@ export default function Index() {
         </div>
       </main>
 
-      <footer className="bg-blue-950 text-center text-white mt-20">
-        <div className="container p-4">
-          <p className="text-sm">
-            My name is Todd Goates and I approve of this website.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
