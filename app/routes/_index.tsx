@@ -148,6 +148,31 @@ export const meta: MetaFunction = () => {
       content:
         "Todd Goates is now 35 years old, therefore he is running for President of the United States of America",
     },
+    {
+      property: "og:title",
+      content: "Todd Goates for President",
+    },
+    {
+      property: "og:description",
+      content:
+        "Todd Goates is now 35 years old, therefore he is running for President of the United States of America",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://vote4.toddgoates.com",
+    },
+    {
+      property: "og:site_name",
+      content: "Todd Goates for President",
+    },
+    {
+      property: "og:image",
+      content: "https://vote4.toddgoates.com/todd.png",
+    },
   ];
 };
 
@@ -217,7 +242,7 @@ export default function Index() {
                 <span className="text-sm text-gray-500">(is that right?)</span>{" "}
                 political ambitions
               </h2>
-              <div className="text-lg space-y-4">
+              <div className="text-lg space-y-4 leading-8">
                 <p>
                   Having recently turned 35 years of age and being a natural
                   born citizen of this great nation, I declare that I am running
@@ -292,7 +317,7 @@ export default function Index() {
               <h2 className="text-2xl font-semibold mt-8 mb-4">
                 What are people saying about Todd?
               </h2>
-              <div className="text-lg space-y-4">
+              <div className="text-lg space-y-4 leading-8">
                 <p>
                   "Todd is a great guy. I've known him for years and he's always
                   had my back." - Guy Incognito
@@ -362,7 +387,7 @@ export default function Index() {
               <h2 className="text-2xl font-semibold mb-4" id="donate">
                 Donate to the cause!
               </h2>
-              <div className="text-lg space-y-4">
+              <div className="text-lg space-y-4 leading-8">
                 <p>
                   As you know, campaigns are expensive. If you want a regular
                   person like me to win the white house, we're gonna need to
@@ -392,7 +417,7 @@ export default function Index() {
               <h2 className="text-2xl font-semibold mb-4">
                 Money money money!
               </h2>
-              <div className="text-lg space-y-4">
+              <div className="text-lg space-y-4 leading-8">
                 <p>
                   <span className="font-semibold">{donorName}</span> just
                   donated{" "}
@@ -409,7 +434,7 @@ export default function Index() {
 
             <Card>
               <h2 className="text-2xl font-semibold mb-4">In conclusion</h2>
-              <div className="text-lg space-y-4">
+              <div className="text-lg space-y-4 leading-8">
                 <p>
                   If you want those fat cats in Washington to stop taking
                   advantage of the little guy, then vote for{" "}
